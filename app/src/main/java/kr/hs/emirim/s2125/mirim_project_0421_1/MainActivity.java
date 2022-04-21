@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,5 +19,8 @@ public class MainActivity extends AppCompatActivity {
         rootLayout.setBackgroundColor(Color.rgb(0,255,255));
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
         setContentView(rootLayout, params);
+        Button btn=new Button(this);
+        btn.setText("버튼연습");
+        rootLayout.addView(btn);
     }
 }
